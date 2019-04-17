@@ -1,0 +1,124 @@
+<html>
+    <head>
+        <script type="text/javascript">
+        // GOOGLE ANALITICS SCRIPT ----------------------- BEGIN
+            var _gaq = _gaq || [];
+            _gaq.push(['_setAccount', 'UA-20041019-2']);
+            _gaq.push(['_trackPageview']);
+            
+            (function () {
+                var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+                ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+                var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+            })();
+        // GOOGLE ANALITICS SCRIPT ----------------------- END   
+        </script>
+    </head>
+    <body>
+        <link rel="stylesheet" href="css/style.css">
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/paintings-data.js"></script>
+        
+        <div class="container">
+            <div class="header">
+                <div class="navigation">
+                    <ul class="main-nav">
+                        <li class="active" id="home"><a href="#" onclick="slideToTop()">Home</a></li>
+                        <li  id="biography"><a href="#" onclick="slideDown()">Biography</a></li>
+                        <li>Design
+                            <ul class="sub-nav">
+                                <li>UI/UX Design</li>
+                                <li>Graphic Design</li>
+                                <li>Interior Design</li>
+                            </ul>
+                        </li>
+                        <li><a href="paintings.html">Paintings</a></li>
+                    </ul>
+                </div>         
+            </div>
+            <div class="main-content" id="mainContent"> 
+                <div class="logo">Jelena Antic</div> 
+                <div class="intro-wrapper">
+                    <img src="images/intro.jpg">
+                    <div class="intro-text">UI/UX designer, Front-end developer and Visual artist with more than 8 years of experience of designing and programming for web. Develops web interfaces with JS, CSS and HTML. She is a specific blend of designer and developer, experienced in UI/UX, graphic design and 3D Modeling with a Master degree in Art. 
+                        She moved from Belgrade to Reykjavik 3 years ago, where she lives with her family. </div>
+                </div>
+                <button class="more-left" onclick="slideLeft()">
+                    Front-end Dev /<br/>UI/UX Designer
+                    <img src="images/next-color.svg" />
+                </button>
+                <button class="more-right" onclick="slideRight()">
+                    Visual Artist
+                    <img src="images/next-color.svg" />
+                </button>
+                <button class="more-down" onclick="slideDown()">
+                    About / Biography
+                    <img src="images/next-color.svg" />
+                </button>
+            </div>
+            
+            <div class="bottom-content" id="bottomContent">
+                <div class="section">
+                    <div class="subtitle">Education</div>
+                    <div class="note">2003 - MA</div>
+                    <p>Master of Arts – Painting; Wall painting / Contemporary Art, Faculty for Applied Arts and Design, Universiy of Arts, Belgrade</p>
+                    <div class="note">2001 - BA</div>
+                    <p>Bachelor of Arts – Painting, Faculty for Applied Arts and Design, Universiy of Arts, Belgrade</p>
+                    <div class="note">1998 - Diploma</div>
+                    <p>Design - Graphic Designer, School for Design, Belgrade</p>
+                </div>
+
+                <div class="section">
+                        <div class="subtitle">Work Experience</div>
+                        <div class="note">May 2016 - Dec 2018 - Front-end Developer @ <a href="http://www.infomentor.is" target="_blank">Infomentor (Mentor ehf)</a>, Fellsmuli 26, Reykjavik, Iceland
+                        </div>
+                        <p>Development for web interfaces with JS, CSS and HTML, as a developer with the most design experience focused
+                           on fine tuning the UI and problem solving in UX. Also was responsible for helping cross team with
+                           testing and design where required.</p>
+                        <div class="note">August 2011 - January 2016 - UI/UX Designer and Workshop Trainer @ <a href="http://www.e-smartsys.com" target="_blank">E-Smart systems d.o.o.</a>, 70a Kneza Viseslava Street, Belgrade, 11030, Serbia</div>
+                        <p>Designing and realization of user interface for IT solutions / web, mobile and windows; Design for marketing materials and  preparing for print; Logotypes, icons and various pictures and illustrations;</p>
+                        <p>Wire-framing according to user requirements; Prototyping; Creating html or wpf prototypes to be
+                        delivered to developers. </p>
+                        <p></p>Leading workshops and teaching course for
+                        HTML5 and CSS3 with Javascript programming and implementing JQuery</p>
+                        <div class="note">April 2011 - December 2013 - Interior Designer - 3D Artist @ <a href="http://www.congressistem.com" target="_blank">Congressistem d.o.o.</a> Belgrade, 11253, Serbia
+                        </div>
+                        <p>3D drawing of interior models based on client and project owner agreement, design, Technical drawings, web site</p>
+                        <div class="note">March 2010 - August 2011  - Freelance Web & Graphic Designer</div>
+                        <p>Web sites design, production & and publish, Design of printing material, Visual Identity</p>
+                    </div>
+
+
+
+
+
+
+
+                <button class="back-to-top" onclick="slideToTop()">
+                        Back to Top
+                        <img src="images/next-color.svg" />
+                    </button>
+            </div>
+
+            <div class="left-content" id="leftContent">
+                    <div class="logo">Jelena Antic</div>  
+                    <div class="subtitle">Front-end Developer / UI/UX Designer</div> 
+                    <button class="more-right" onclick="slideBackRight()">
+                        Back to Home
+                        <img src="images/next-color.svg" />
+                    </button> 
+                
+            </div>
+
+            <div class="right-content" id="rightContent">
+                    <div class="logo">Jelena Antic</div>  
+                    <div class="subtitle">Visual Artist</div>  
+                    <button class="more-left" onclick="slideBackLeft()">
+                        Back to Home
+                        <img src="images/next-color.svg" />
+                    </button>
+            </div>
+        </div>
+        
+    </body>
+</html>
