@@ -17,36 +17,36 @@
     <body class="paintings">
         <link rel="stylesheet" href="css/style.css">
         <script type="text/javascript" src="js/paintings-data.js"></script>
-        <div class="header">
-            <div class="navigation">
-                <ul class="main-nav">
-                    <li><a href="index.html">Home</a></li>
-                    <li>Biography</li>
-                    <li>Design
-                        <ul class="sub-nav">
-                            <li>UI/UX Design</li>
-                            <li>Graphic Design</li>
-                            <li>Interior Design</li>
-                        </ul>
-                    </li>
-                    <li class="active"><a href="#">Paintings</a></li>
+    
+    
+        <ul class="main-nav">
+            <li><a href="index.html">Home</a></li>
+            <li>Biography</li>
+            <li>Design
+                <ul class="sub-nav">
+                    <li>UI/UX Design</li>
+                    <li>Graphic Design</li>
+                    <li>Interior Design</li>
                 </ul>
-            </div>
-            <div class="logo">Jelena Antic</div>  
-            <div class="subtitle">Visual Artist</div>           
+            </li>
+            <li class="active"><a href="#">Paintings</a></li>
+        </ul>
+    
+        <div class="logo">Jelena Antic</div>
+        <div class="subtitle">Visual Artist</div>
         </div>
         <div class="works" id="works"></div>
-        
+    
         <script>
-                obj = JSON.parse(data);
-                let output = '';
-                    for (var i = 0; i < obj.paintings.length; i++) {
-                        
-                        output += '<div class="grid">' + '<img src="' + obj.paintings[i].src + '">' + '<br/>' + obj.paintings[i].title + ', ' + obj.paintings[i].year + '<br/>' + obj.paintings[i].size + ', ' + obj.paintings[i].medium + '<br/>' + 'Price: '  + obj.paintings[i].price + '<br/>' + 'Location: '  + obj.paintings[i].location + '<br/>' + 'Status: '  + obj.paintings[i].availability + '</div> ';
-                        
-                    }
-                    document.getElementById('works').innerHTML =  output ;
-  
-            </script>
+            obj = JSON.parse(data);
+            let output = '';
+            for (var i = 0; i < obj.paintings.length; i++) {
+
+                output += '<div class="grid">' + '<img src="' + obj.paintings[i].src + '">' + '<br/>' + obj.paintings[i].title + ', ' + obj.paintings[i].year + '<br/>' + obj.paintings[i].size + ', ' + obj.paintings[i].medium + '<br/>' + 'Price: ' + obj.paintings[i].price + '<br/>' + 'Location: ' + obj.paintings[i].location + '<br/>' + 'Status: ' + obj.paintings[i].availability + '</div> ';
+
+            }
+            document.getElementById('works').innerHTML = output;
+
+        </script>
     </body>
 </html>
