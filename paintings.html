@@ -1,5 +1,6 @@
 <html>
     <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript">
         // GOOGLE ANALITICS SCRIPT ----------------------- BEGIN
             var _gaq = _gaq || [];
@@ -16,9 +17,24 @@
     </head>
     <body class="paintings">
         <link rel="stylesheet" href="css/style.css">
-        <script type="text/javascript" src="js/paintings-data.js"></script>
-    
-    
+        <script type="text/javascript" src="js/main.js"></script>
+        <script type="text/javascript" src="js/paintings-data.js"></script>  
+        <script>
+                window.onscroll = function() {scrollFunction()};
+                        
+                function scrollFunction() {
+                    if (document.body.scrollTop > 150 || document.documentElement.scrollTop > 150) {
+                        document.getElementById("backToTop").style.display = "block";
+                    } else {
+                        document.getElementById("backToTop").style.display = "none";
+                    }
+                }
+                        
+                function topFunction() {
+                    window.scrollTo({ top: 0, behavior: 'smooth' });
+                }
+            </script>     
+        <button class="back-to-top" onclick="topFunction()" id="backToTop" title="Go to top">Go back to top</button>
         <ul class="main-nav">
             <li><a href="index.html">Home<div class="about"> / About</div></a></li>
             <li>Design
@@ -35,7 +51,6 @@
         <div class="subtitle">Visual Artist</div>
         </div>
         <div class="works" id="works"></div>
-    
         <script>
             obj = JSON.parse(data);
             let output = '';
