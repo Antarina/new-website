@@ -164,11 +164,13 @@ body {
 .right-content {
   right: -100%;
   top: 0;
+  display: none;
 }
 
 .right-content.active-screen {
   right: 0;
   transition-property: right;
+  display: block;
 }
 
 /* NAVIGATION BUTTONS ------------------------------------*/
