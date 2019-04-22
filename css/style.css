@@ -66,6 +66,8 @@ body {
 .main-content {
   top: 0;
   transition-property: left;
+  left: 0;
+  position: absolute;
 }
 
 .main-content,
@@ -86,12 +88,12 @@ body {
 
 .main-content.non-active {
   left: 100%;
-  transition-property: left;
+  position: fixed;
 }
 
 .main-content.non-active-right {
   left: -100%;
-  transition-property: left;
+  position: fixed;
 }
 
 .logo {
@@ -148,11 +150,14 @@ body {
 .left-content {
   left: -100%;
   top: 0;
+  transition-property: left;
+  position: fixed;
 }
 
 .left-content.active-screen {
   left: 0;
   transition-property: left;
+  position: absolute;
 }
 
 .left-content.active-screen,
@@ -164,13 +169,14 @@ body {
 .right-content {
   right: -100%;
   top: 0;
-  display: none;
+  position: fixed;
+  transition-property: right;
 }
 
 .right-content.active-screen {
   right: 0;
   transition-property: right;
-  display: block;
+  position: absolute;
 }
 
 /* NAVIGATION BUTTONS ------------------------------------*/
@@ -188,6 +194,7 @@ body {
   justify-content: space-between;
   height: 140px;
   align-items: center;
+  outline:none;
 }
 
 .more-left img,
@@ -210,6 +217,7 @@ body {
   top: calc(50% - 70px);
   right: 5px;
 }
+
 
 .back-to-top {
   display: none;
@@ -282,6 +290,17 @@ body {
 }
 
 /*RESPONSIVE - INDEX---------------------------------------------------------*/
+
+@media only screen and (min-width: 1024px) {
+  .left-content .more-right {
+    top: calc(50% - 60px);
+  } 
+
+  .right-content .more-left {
+    top: calc(50% - 70px);
+    height: 140px;
+}
+}
 
 @media only screen and (max-width: 1366px) {
   .container {
